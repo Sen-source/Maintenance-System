@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.piamonte.controller.MainMaintenanceSystemController">
+   <center>
+      <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn minWidth="150.0" prefWidth="75.0" text="Maintenance ID" />
+          <TableColumn minWidth="120.0" prefWidth="75.0" text="Technician Name" />
+            <TableColumn minWidth="118.4000244140625" prefWidth="129.5999755859375" text="Client Name" />
+            <TableColumn minWidth="102.4000244140625" prefWidth="150.4000244140625" text="Maintenance Type" />
+            <TableColumn prefWidth="96.79998779296875" text="Status" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <Label text="Maintenance System" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnCreate" mnemonicParsing="false" onAction="#OnCreate" text="Create">
+               <HBox.margin>
+                  <Insets left="85.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnEdit" mnemonicParsing="false" onAction="#OnEdit" text="Edit">
+               <HBox.margin>
+                  <Insets left="85.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#OnDelete" text="Delete">
+               <HBox.margin>
+                  <Insets left="85.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnClose" mnemonicParsing="false" onAction="#OnClose" text="Close">
+               <HBox.margin>
+                  <Insets left="85.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
